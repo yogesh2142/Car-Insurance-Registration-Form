@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Car Insurance Registration Form</h2>
+    <form method="POST" action="/submit-form">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+
+        <!-- Gender Field -->
+        <div class="form-group">
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" placeholder="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" placeholder="gender" value="female" required>
+                <label for="female">Female</input>
+                <input type="radio" id="other" placeholder="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <!-- Car Brands Field -->
+        <div class="form-group">
+            <label for="cars">Car Brands</label>
+            <select id="cars" name="cars">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+        </div>
+
+        <!-- Car Age Field -->
+        <div class="form-group">
+            <label for="carage">Car Age</label>
+            <input type="number" id="carage" placeholder="carage" required>
+        </div>
+
+        <!-- Date of Purchase Field -->
+        <div class="form-group">
+            <label for="dop">Date of Purchase (dop)</label>
+            <input type="date" id="dop" placeholder="dop" required>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
